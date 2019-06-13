@@ -10,120 +10,43 @@ Create an app which is a directory for all the animals in a zoo.
         It should have the detail of that animal and play a sound of that animal.
 */
 
-NOTE - Currently, only the listview activity works. 
-MainActivity
+The HomeScreen
+![S1](https://user-images.githubusercontent.com/51377429/59403689-a9bbf880-8d71-11e9-893b-aea66b2a03fc.jpg)
 
-        public class MainActivity extends AppCompatActivity {
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_main);
-            }
+The Category Screen
+![S2](https://user-images.githubusercontent.com/51377429/59403688-a9bbf880-8d71-11e9-9a93-d57a1946718f.jpg)
 
-            public void onClick(View view) {
-                if(view.getId() == R.id.btCategory) {
-                    Intent intent = new Intent(this, CategoryListViewActivity.class);
-                    startActivity(intent);
-                }
-            } // end onClick
-        } // end main activity
-        
-        
- CategoryListViewActivity
- 
-    public class CategoryListViewActivity extends AppCompatActivity {
+List of all land animals
+![S3](https://user-images.githubusercontent.com/51377429/59403687-a9236200-8d71-11e9-89bc-65ae72c3ba2c.jpg)
 
-    ListView lvCategory;
-    RecyclerView rvAnimalRecyclerView;
-    ArrayList<AnimalList> animalList = new ArrayList<>();
+Description for Dog
+![S4](https://user-images.githubusercontent.com/51377429/59403686-a9236200-8d71-11e9-84dd-d2518cb2ab48.jpg)
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category_list_view);
+Description for Dinosaur
+![S5](https://user-images.githubusercontent.com/51377429/59403685-a9236200-8d71-11e9-99c6-533ee7a1fc1b.jpg)
 
-        lvCategory = findViewById(R.id.lvCategory);
+Back to the categories
+![S6](https://user-images.githubusercontent.com/51377429/59403684-a9236200-8d71-11e9-8e9e-a57868873949.jpg)
 
-        // Create a new ArrayList to hold categories of animals
-        final ArrayList<String> myList = new ArrayList<>();
-        myList.add("Land Animals");
-        myList.add("Water Animals");
+Description for Lobsters
+![S7](https://user-images.githubusercontent.com/51377429/59403683-a9236200-8d71-11e9-91d2-29966e4a0482.jpg)
 
-        // attach the arrayList to an adapter, and pass that adapter to the listview
-        ArrayAdapter Adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, myList);
-        lvCategory.setAdapter(Adapter);
+Description for Sharks
+![S8](https://user-images.githubusercontent.com/51377429/59403682-a9236200-8d71-11e9-955c-6feaf61b96b2.jpg)
 
-        lvCategory.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View view, int position, long l) {
-                if(position == 1){
-                    populateLandAnimalList();
-                    callRecyclerView();
-                    Intent intent = new Intent(getApplicationContext(), CategoryListViewActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-                else if(position == 2){
-                    populateWaterAnimalList();
-                    callRecyclerView();
-                    Intent intent = new Intent(getApplicationContext(), CategoryListViewActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-            }
-        });
-    } // end onCreate
 
-    private void callRecyclerView() {
-        rvAnimalRecyclerView = findViewById(R.id.rvAnimalRecyclerView);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        AnimalRecyclerView animalRecyclerView = new AnimalRecyclerView();
 
-        rvAnimalRecyclerView.setLayoutManager(layoutManager);
-        rvAnimalRecyclerView.setAdapter(animalRecyclerView);
-    }
 
-    private void populateLandAnimalList(){
-        animalList.add(new AnimalList("Cheetah", "0-60 faster than your secondhand civic"));
-        animalList.add(new AnimalList("Dog","Abuse it and you answer to John Wick"));
-        animalList.add(new AnimalList("Hyena", "Why are these idiots always laughing?"));
-        animalList.add(new AnimalList("Dinosaur", "Yes I know they're extinct but they're still cool ok!"));
-    }
 
-    private void populateWaterAnimalList(){
-        animalList.add(new AnimalList("Shark", "Kills less peoeple per year than cows"));
-        animalList.add(new AnimalList("Dolphin", "Super smart, friendly, and definitely up to something"));
-        animalList.add(new AnimalList("Stringray", "Why did they kill my boy Steve Irwin?"));
-        animalList.add(new AnimalList("Lobster", "Why are you guys so expensive"));
-    }
-    } // end class
-    
-AnimalRecyclerView
 
-    public class AnimalRecyclerView extends RecyclerView.Adapter<AnimalRecyclerView.ViewHolder> {
 
-    public AnimalRecyclerView() {
 
-    }
 
-    @NonNull
-    @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return null;
-    }
-    @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
-    }
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
-      public class ViewHolder extends RecyclerView.ViewHolder{
-        public ViewHolder(View item) {
-            super(item);
-        }
-      }
-  }
+
+
+
+
+
 
         
