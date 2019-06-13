@@ -8,21 +8,11 @@
     tools:context=".CategoryListViewActivity">
 
     <ListView
+        android:background="@color/colorOrange"
         android:id="@+id/lvCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contextClickable="true">
-
     </ListView>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvAnimalRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

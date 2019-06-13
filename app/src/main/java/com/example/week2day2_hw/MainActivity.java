@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // When the user clicks this button, take them to the listView activity displaying all categories
     public void onClick(View view) {
         if(view.getId() == R.id.btCategory) {
             Intent intent = new Intent(this, CategoryListViewActivity.class);

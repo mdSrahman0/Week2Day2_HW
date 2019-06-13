@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnimalRecyclerView"></activity>
+        <activity android:name=".DescriptionActivity"></activity>
+        <activity android:name=".RecyclerViewActivity" />
         <activity
             android:name=".CategoryListViewActivity"
-            android:label="@string/title_activity_category_list_view"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>

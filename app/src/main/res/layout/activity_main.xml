@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         app:srcCompat="@drawable/cheetah" />
+
     <Button
         android:id="@+id/btCategory"
         android:layout_width="match_parent"
@@ -30,7 +31,7 @@
         android:onClick="onClick"
         android:textSize="25sp"
         android:backgroundTint="@color/colorLightPurple"
-        android:text="Categories of Animals"
+        android:text="@string/category_button"
         style="@style/BaseText"/>
 
 

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">REALLY AWESOME ZOO</string>
     <string name="greeting">Welcome to the Best Zoo Experience of the 21st Century!!!!</string>
-    <string name="title_activity_category_list_view">CategoryListViewActivity</string>
+    <string name="category_button">Categories of Animals</string>
 </resources>

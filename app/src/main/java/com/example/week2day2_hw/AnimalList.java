@@ -1,3 +1,5 @@
+// Will hold an Animal object. An animal object only holds a name and a description.
+
 package com.example.week2day2_hw;
 
 public class AnimalList {
