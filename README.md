@@ -1,14 +1,12 @@
 # Week2Day2_HW
 
-/**
- * Md Rahman
+Md Rahman
 Create an app which is a directory for all the animals in a zoo.
-        1. Activity one: Make a homepage for zoo information
-        2. Activity two: ListView with list of all the categories.
-        3. Activity three: RecyclerView with a list of all the animals in that category
-        4. Activity four: Detail of that animal selected from the list.
-        It should have the detail of that animal and play a sound of that animal.
-*/
+1. Activity one: Make a homepage for zoo information
+2. Activity two: ListView with list of all the categories.
+3. Activity three: RecyclerView with a list of all the animals in that category
+4. Activity four: Detail of that animal selected from the list.
+It should have the detail of that animal and play a sound of that animal.
 
 The HomeScreen
 ![S1](https://user-images.githubusercontent.com/51377429/59403689-a9bbf880-8d71-11e9-893b-aea66b2a03fc.jpg)
